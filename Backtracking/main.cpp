@@ -22,3 +22,5 @@ int main()
 
     return 0;
 }
+
+// cout << fixed << setprecision(12) << prob << endl;
