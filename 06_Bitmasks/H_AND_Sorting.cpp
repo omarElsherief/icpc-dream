@@ -30,23 +30,24 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n, k;
-        cin >> n >> k;
-        if (n == 1)
-            cout << k << el;
-        else
+        int n;
+        cin >> n;
+        V<int> v(n);
+        V<int> v2;
+        for (size_t i = 0; i < n; i++)
         {
-            int MSB = 31 - __builtin_clz(k);
-            cout << (1 << MSB) - 1 << " ";
-            k -= (1 << MSB) - 1;
-            cout << k << " ";
-            n -= 2;
-            while (n--)
+
+            cin >> v[i];
+            if (i)
             {
-                cout << 0 << " ";
+                if (v[i] != i)
+                {
+                    v2.push_back(v[i]);
+                }
             }
-            cout << el;
         }
+        sort(all(v2));
+        cout << ((v2[v2.size() - 1]) & (v2[v2.size() - 2])) << el;
     }
 
     return 0;

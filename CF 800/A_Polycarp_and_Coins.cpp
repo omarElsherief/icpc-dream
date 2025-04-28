@@ -30,23 +30,13 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n, k;
-        cin >> n >> k;
-        if (n == 1)
-            cout << k << el;
-        else
-        {
-            int MSB = 31 - __builtin_clz(k);
-            cout << (1 << MSB) - 1 << " ";
-            k -= (1 << MSB) - 1;
-            cout << k << " ";
-            n -= 2;
-            while (n--)
-            {
-                cout << 0 << " ";
-            }
-            cout << el;
-        }
+        int n;
+        cin >> n;
+        int c1, c2;
+        int x = n % 3;
+        n -= x;
+        c1 = c2 = n / 3;
+        x == 1 ? cout << c1 + 1 << " " << c2 << el : cout << c1 << " " << c2 + x / 2 << el;
     }
 
     return 0;

@@ -26,27 +26,21 @@ typedef long long ll;
 int main()
 {
     smurf;
+
     int t;
     cin >> t;
     while (t--)
     {
-        int n, k;
-        cin >> n >> k;
-        if (n == 1)
-            cout << k << el;
-        else
-        {
-            int MSB = 31 - __builtin_clz(k);
-            cout << (1 << MSB) - 1 << " ";
-            k -= (1 << MSB) - 1;
-            cout << k << " ";
-            n -= 2;
-            while (n--)
-            {
-                cout << 0 << " ";
-            }
-            cout << el;
-        }
+        int arr[4];
+        cin >> arr[0];
+        cin >> arr[1];
+        int mx1 = max(arr[0], arr[1]);
+        int mn1 = min(arr[0], arr[1]);
+        cin >> arr[2];
+        cin >> arr[3];
+        int mx2 = max(arr[2], arr[3]);
+        int mn2 = min(arr[2], arr[3]);
+        mn2 > mx1 || mn1 > mx2 ? cout << "NO" << el : cout << "YES" << el;
     }
 
     return 0;

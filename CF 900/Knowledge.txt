@@ -1,0 +1,9 @@
+B_Array_Reodering
+
+If the value of ai is even, then gcd(ai,2aj) at least 2, regardless of the value of aj.
+Therefore, we can put all the even values before the odd ones (it does not matter in what order).Now it remains to arrange the odd values. 
+In fact, their order is not important, 
+because gcd(ai,2aj)=gcd(ai,aj) (for odd ai and aj). This means that each pair will be considered exactly 1 time,
+regardless of the order of the odd elements.
+
+----------------------------------------------------------------------------------------------------------------------------------------------

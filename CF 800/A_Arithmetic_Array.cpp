@@ -26,27 +26,22 @@ typedef long long ll;
 int main()
 {
     smurf;
+
     int t;
     cin >> t;
     while (t--)
     {
-        int n, k;
-        cin >> n >> k;
-        if (n == 1)
-            cout << k << el;
-        else
+        int sum = 0;
+        int n;
+        cin >> n;
+        for (size_t i = 0; i < n; i++)
         {
-            int MSB = 31 - __builtin_clz(k);
-            cout << (1 << MSB) - 1 << " ";
-            k -= (1 << MSB) - 1;
-            cout << k << " ";
-            n -= 2;
-            while (n--)
-            {
-                cout << 0 << " ";
-            }
-            cout << el;
+
+            int x;
+            cin >> x;
+            sum += x;
         }
+        sum >= n ? cout << sum - n << el : cout << 1 << el;
     }
 
     return 0;

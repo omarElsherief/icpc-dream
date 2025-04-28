@@ -30,23 +30,16 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n, k;
-        cin >> n >> k;
-        if (n == 1)
-            cout << k << el;
-        else
+        int n;
+        int odd = 0, even = 0;
+        cin >> n;
+        for (size_t i = 0; i < 2 * n; i++)
         {
-            int MSB = 31 - __builtin_clz(k);
-            cout << (1 << MSB) - 1 << " ";
-            k -= (1 << MSB) - 1;
-            cout << k << " ";
-            n -= 2;
-            while (n--)
-            {
-                cout << 0 << " ";
-            }
-            cout << el;
+            int x;
+            cin >> x;
+            x % 2 == 0 ? even++ : odd++;
         }
+        odd == even ? cout << "Yes" << el : cout << "No" << el;
     }
 
     return 0;
