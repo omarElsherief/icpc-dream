@@ -23,6 +23,6 @@ I'm using these sheets to improve my problem-solving skills and prepare for cont
 
 ## 📂 Repository Structure
 
-By topic [ICPC Helwan 2025 - Level 2 Sheet]
-By sheet rate [TLE Eliminators CP Sheet] & [Codeforces C2 Ladders]
+- #### By topic [ICPC Helwan 2025 - Level 2 Sheet]
+- #### By sheet rate [TLE Eliminators CP Sheet] & [Codeforces C2 Ladders]
 
